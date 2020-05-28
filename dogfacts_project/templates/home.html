@@ -17,9 +17,9 @@
         transform: scale(1.1);
     }
 </style>
-<div class="container" style="max-width: 100%; padding:0px; margin:0px;">
+<div class="container" id="more-container" style="max-width: 100%; padding:0px; margin:0px; visibility:hidden">
     <div class="row justify-content-end" style="padding:0px; margin:0px;">
-        <div class="col-5" id="want-more" style="margin-right:50px;">
+        <div class="col-5"  style="margin-right:50px;">
             <form action="{% url 'morefacts' %}" style="margin:0px; padding:0px; font-size: 21px;" method="POST">
                 {% csrf_token %}
                     <button type="submit" style="width:100%; border:3px solid black; margin:0px; padding:0px; background-color:white; text-align:center; font-size: 21px;">Do you want to know more?</button>
@@ -33,7 +33,7 @@
     <div class="row justify-content-center" style="height:310px; margin:0px;">
         <div class="col" style="height:310px;">
             <section style="padding:0px; margin:0px; height:310px;">
-                <blockquote class="electric mybubble" id='did-you-know1'> 
+                <blockquote class="electric mybubble d-none" id='did-you-know1'> 
                     <div class="col">
                         <p>Did you know, that <span>45%</span>of dogs sleep in their owner’s bed?</p>
                     </div>
@@ -44,7 +44,7 @@
     <div class="row justify-content-between" style="height:310px; margin:0px;">
         <div class="col-4" style="height:310px;">
             <section style="padding:0px; margin:0px; height:310px;">
-                <blockquote class="electric mybubble" id='did-you-know2'> 
+                <blockquote class="electric mybubble d-none" id='did-you-know2'> 
                     <div class="col">
                         <p>Did you know, that The Basenji is the <span>only</span> barkless dog in the world?</p>
                     </div>
@@ -53,7 +53,7 @@
         </div>
         <div class="col-4" style="height:310px;">
             <section style="padding:0px; margin:0px; height:310px;">
-                <blockquote class="electric mybubble" id='did-you-know4'> 
+                <blockquote class="electric mybubble d-none" id='did-you-know3'> 
                     <div class="col">
                         <p>Did you know, that there are <span>hundreds</span> of different breeds of dogs?</p>
                     </div>
@@ -64,28 +64,5 @@
     </div>
 
 </div>
-    
-    
-    
-
-
-    <!-- <section>
-        <blockquote class="electric bubble d-none" id='did-you-know1-container' style="width: 300px; height:200px; padding: 10% 11% 12% 0%; font-size:35px; ">Did you know, that <span>45%</span> of dogs sleep in their owner’s bed?</blockquote>
-    </section>
-
-    <section>
-        <blockquote class="electric bubble d-none" id='did-you-know2-container' style="width: 50%; height:200px; padding: 10% 11% 12% 0%; font-size:35px; ">Did you know, that The Basenji is the <span>only</span> barkless dog in the world?</blockquote>
-    </section> -->
-    
-   
-    <!-- <div class="container d-none" id='did-you-know-container' style="border: 1px solid yellow; height:auto;">
-        <div class="row">
-            <div class="col">
-                <section>
-                    <blockquote class="electric bubble" style="width: 40%; height:30%; padding: 10% 11% 12% 0%; font-size:35px;">Did you know, that <span>45%</span> of dogs sleep in their owner’s bed??</blockquote>
-                  </section>
-            </div>
-        </div>
-    </div> -->
     
 {% endblock content %}
