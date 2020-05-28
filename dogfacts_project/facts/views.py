@@ -6,12 +6,7 @@ from .models import Fact
 # Create your views here.
 
 def home(request):
-    # all_facts = Fact.objects.all()
-    # context = {
-    #     'facts':all_facts,
-    # }
     return render(request, 'home.html')
-    # return HttpResponse("Start")
 
 def addFact(request):
     new_fact = Fact()
