@@ -7,24 +7,41 @@
         <link href="{% static 'css/base.css' %}" rel="stylesheet">
         <script>
             document.addEventListener("DOMContentLoaded", function() {
-                document.querySelector('body').onclick = function() {
-                    document.getElementById('logo-image').style.cssText='position: relative; top: 0%; left:0%;';
-                    
+                document.querySelector('#logo-image').onclick = function() {
+                    document.getElementById('logo-image').style.cssText='position:relative; width:400px; top: 0%; left:0%;';
+                    document.getElementById('logo-row').style.cssText='height:260px';
+                    document.getElementById('logo-container').style.cssText='height:260px';
+                    setTimeout(() => {
+                        appearInfo()
+                    }, 2000);
+
                 };
-                
-               
             });
 
             function appearInfo() {
+                
                 document.getElementById('welcome-col').classList.remove('d-none');
-                document.getElementById('did-you-know1-container').classList.remove('d-none');
-                document.getElementById('did-you-know2-container').classList.remove('d-none');
+                document.getElementById('did-you-know1').classList.remove('d-none');   
+                setTimeout(fact2, 3000);
+                setTimeout(fact3, 6000);
+                setTimeout(visibility, 12000);
 
-    
+            }
+            
+            function fact2() {
+                document.getElementById('did-you-know2').classList.remove('d-none');
+            }
+            function fact3() {
+                document.getElementById('did-you-know3').classList.remove('d-none');
+            }
+            
+            function visibility() {
+                document.getElementById('more-container').style.cssText='visibility:visible';
+                
             }
             
         </script>
-        <body>
+        <body >
             <style type="text/css">
                 body {
                     
@@ -45,10 +62,12 @@
                     margin: 0px;
                 }
                 #logo-image {
+                    
+                    cursor: pointer;
                     width: 50%;
-                    top: 20%;
+                    top: 45%;
                     left:25%;
-                    position: fixed;
+                    position:absolute;
                     transition: all 1.0s ease-in-out;
                 }
                 #log-out-button {
@@ -63,10 +82,10 @@
                 
 
             </style>
-            <div class="container logo-container" style="height:260px">
-                <div class="row logo-row" style="height:260px">
-                    <div class="col logo-col" style="height:260px">
-                        <img id="logo-image" src="{% static 'facts/logo.png' %}" onclick="appearInfo()">
+            <div class="container logo-container" id="logo-container" style="height:260px">
+                <div class="row logo-row" id="logo-row" style="height:260px">
+                    <div class="col logo-col" id="logo-col" style="height:260px">
+                        <img id="logo-image" src="{% static 'facts/logo.png' %}">
                     </div>
                     <div class="col d-none" id="welcome-col">
                         {% if user.is_authenticated %}
@@ -80,15 +99,15 @@
                         </div>
                         <div class="row" style="margin-top: 2%; margin:0px; padding:5px;">
                             <div class="col-4" style="margin: 5px; border: 3px solid black; background-color:white;">
-                                <p id="welcome" style="margin:0px; text-align:center; font-size: 21px;">Submit new fact:</p>
+                                <p id="welcome" style="margin:0px; text-align:center; font-size: 20px;">Submit new fact:</p>
                             </div>
                             <div class="col" style="margin: 5px;">
                                
                                 
-                                <form action="{% url 'addFact' %}" style="margin:0px; padding:0px; font-size: 21px;" method="POST">
+                                <form action="{% url 'addFact' %}" style="margin:0px; padding:0px; font-size: 20px;" method="POST">
                                     {% csrf_token %}
-                                        <input type="text" name="new_fact" id="new_fact" autocomplete="off" style="width:75%; border:3px solid black; margin:0px; margin-right:5px; padding:0px; font-size: 21px;" required>
-                                        <button type="submit" style="width:20%; border:3px solid black; margin:0px; padding:0px; background-color:white; text-align:center; font-size: 21px;">Submit</button>
+                                        <input type="text" name="new_fact" id="new_fact" autocomplete="off" style="width:75%; border:3px solid black; margin:0px; margin-right:5px; padding:0px; font-size: 20px;" required>
+                                        <button type="submit" style="width:20%; border:3px solid black; margin:0px; padding:0px; background-color:white; text-align:center; font-size: 20px;">Submit</button>
                                 </form>
                             </div>
                         </div>
