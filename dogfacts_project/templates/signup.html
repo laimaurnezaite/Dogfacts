@@ -1,14 +1,41 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>DogFacts</title>
-    </head>
-    <body>
-        <h2>Sign up</h2>
-        <form method="POST">
-            {% csrf_token %}
-            {{ form.as_p}}
-            <button type="submit">Sign Up</button>
-        </form>
-    </body>
-</html>
+{% extends 'base.html' %}
+
+{% block content %}
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('logo-image').style.cssText='position:relative; width:400px; top: 0%; left:0%;';
+            document.getElementById('welcome-col').classList.remove('d-none');
+        });
+    </script>
+    <style> 
+
+        
+    </style>
+    <div class="container" style="margin:auto; border:3px solid black; background:white">
+        <div class="row" style="padding:2%;">
+            <div class="col">
+                <form method="POST" style="text-align:center; padding:2%; font-size: 20px;">
+                    {% csrf_token %}
+                    <!-- {{ form.as_p }} -->
+                    <label for="{{ form.username.id_for_label }}" style="width: 200px;">Username:</label>
+                    {{ form.username }} <br>
+                    <label for="{{ form.password1.id_for_label }}" style="width: 200px;">Password:</label>
+                    {{ form.password1 }}  <br>
+                    <label for="{{ form.password2.id_for_label }}" style="width: 200px;">Confirm password:</label>
+                    {{ form.password2 }}  <br>
+                    <ul style="text-align: center; list-style-type:none">
+                        <li>Username must be 150 characters or fewer. Letters, digits and @/./+/-/_ only.</li>
+                        <li>Your password can't be too similar to your other personal information.</li>
+                        <li>Your password must contain at least 8 characters.</li>
+                        <li>Your password can't be a commonly used password.</li>
+                        <li>Your password can't be entirely numeric.</li>
+                    </ul>
+
+
+                    <button type="submit" style=" width: 100px; border:3px solid black; font-size: 20px;">Log In</button> <br>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+{% endblock content %}

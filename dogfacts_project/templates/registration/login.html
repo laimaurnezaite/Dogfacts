@@ -1,14 +1,34 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>DogFacts</title>
-    </head>
-    <body>
-        <h2>Login</h2>
-        <form method="POST">
-            {% csrf_token %}
-            {{ form.as_p}}
-            <button type="submit">Log In</button>
-        </form>
-    </body>
-</html>
+{% extends 'base.html' %}
+
+{% block content %}
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('logo-image').style.cssText='position:relative; width:400px; top: 0%; left:0%;';
+            document.getElementById('welcome-col').classList.remove('d-none');
+        });
+    </script>
+    <style> 
+
+        
+    </style>
+    <div class="container" style="margin:auto; border:3px solid black; background:white">
+        <div class="row" style="padding:2%;">
+            <div class="col">
+                <form method="POST" style="text-align:center; padding:2%; font-size: 20px;">
+                    {% csrf_token %}
+                    <!-- {{ form.as_p }} -->
+                    <label for="{{ form.username.id_for_label }}" style="width: 200px;">Username:</label>
+                    {{ form.username }} <br>
+                    <label for="{{ form.password1.id_for_label }}" style="width: 200px;">Password:</label>
+                    {{ form.password }}  <br>
+                    <ul style="text-align: center; list-style-type:none">
+                        <li>Please enter a correct username and password. Note that both fields may be case-sensitive.</li>
+                    </ul>
+                    <button type="submit" style=" width: 100px; border:3px solid black; font-size: 20px;">Log In</button> <br>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    
+{% endblock content %}
