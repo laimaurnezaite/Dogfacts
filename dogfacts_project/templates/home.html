@@ -1,45 +1,91 @@
-<!DOCTYPE html>
-{% load staticfiles %}
-<html>
-    <head>
-        <title>DogFacts</title>
-        <link href="{% static 'bootstrap-4.4.1-dist/css/bootstrap.css' %}" rel="stylesheet">
-        <link href="{% static 'css/base.css' %}" rel="stylesheet">
-        
-    </head>
-    <body>
-        <div class="container" style="border:1px solid black">
-            <div class="row">
-                <div class="col">Testing Bootstrap</div>
-            </div>
-        </div>
-        
-        <h2>HOME</h2>
-        <div class="container" style="border:1px solid black">
-            <div class="row">
-                
-                {% for fact in facts %}
-                    <div class="col">
-                        <p>{{fact.user}} says: {{fact.text}}</p>
-                    </div>
-                {% endfor %}
-            </div>
-        </div>
-        
-        <p>This is homepage</p>
-        {% if user.is_authenticated %}
-            <p>Hi {{ user.username }}!</p> 
-            <p><a href="{% url 'logout' %}">Log out</a></p>
-            <p>Add your fact:</p>
-            <form action="{% url 'addFact' %}" method="POST">
+
+{% extends 'base.html' %}
+
+{% block content %}
+<style>
+    #did-you-know2, #did-you-know1, #did-you-know3, #did-you-know4 {
+        width: 500px; 
+        height:330px; 
+        padding-bottom:0; 
+        padding-top:60px; 
+        padding-right:115px; 
+        padding-left:20px; 
+        text-align:center; 
+        font-size:26px
+    }
+    #want-more:hover {
+        transform: scale(1.1);
+    }
+</style>
+<div class="container" style="max-width: 100%; padding:0px; margin:0px;">
+    <div class="row justify-content-end" style="padding:0px; margin:0px;">
+        <div class="col-5" id="want-more" style="margin-right:50px;">
+            <form action="{% url 'morefacts' %}" style="margin:0px; padding:0px; font-size: 21px;" method="POST">
                 {% csrf_token %}
-                <input type="text" name="new_fact" id="new_fact" placeholder="Let us know your fact!" autocomplete="off" required>
-                <button type="submit">Submit</button>
+                    <button type="submit" style="width:100%; border:3px solid black; margin:0px; padding:0px; background-color:white; text-align:center; font-size: 21px;">Do you want to know more?</button>
             </form>
-        {% else %}
-            <p>You are not logged in.</p>
-            <a href="{% url 'signup' %}">Sign up</a> 
-            <a href="{% url 'login' %}">Log In</a> 
-        {% endif %}
-        </body>
-</html>
+        </div>
+    </div>
+
+</div>
+
+<div class="container" style="padding: 0px; margin:0px; max-width:100%;">
+    <div class="row justify-content-center" style="height:310px; margin:0px;">
+        <div class="col" style="height:310px;">
+            <section style="padding:0px; margin:0px; height:310px;">
+                <blockquote class="electric mybubble" id='did-you-know1'> 
+                    <div class="col">
+                        <p>Did you know, that <span>45%</span>of dogs sleep in their owner’s bed?</p>
+                    </div>
+                </blockquote>
+            </section>
+        </div>
+    </div>
+    <div class="row justify-content-between" style="height:310px; margin:0px;">
+        <div class="col-4" style="height:310px;">
+            <section style="padding:0px; margin:0px; height:310px;">
+                <blockquote class="electric mybubble" id='did-you-know2'> 
+                    <div class="col">
+                        <p>Did you know, that The Basenji is the <span>only</span> barkless dog in the world?</p>
+                    </div>
+                </blockquote>
+            </section>
+        </div>
+        <div class="col-4" style="height:310px;">
+            <section style="padding:0px; margin:0px; height:310px;">
+                <blockquote class="electric mybubble" id='did-you-know4'> 
+                    <div class="col">
+                        <p>Did you know, that there are <span>hundreds</span> of different breeds of dogs?</p>
+                    </div>
+                </blockquote>
+            </section>
+        </div>
+        
+    </div>
+
+</div>
+    
+    
+    
+
+
+    <!-- <section>
+        <blockquote class="electric bubble d-none" id='did-you-know1-container' style="width: 300px; height:200px; padding: 10% 11% 12% 0%; font-size:35px; ">Did you know, that <span>45%</span> of dogs sleep in their owner’s bed?</blockquote>
+    </section>
+
+    <section>
+        <blockquote class="electric bubble d-none" id='did-you-know2-container' style="width: 50%; height:200px; padding: 10% 11% 12% 0%; font-size:35px; ">Did you know, that The Basenji is the <span>only</span> barkless dog in the world?</blockquote>
+    </section> -->
+    
+   
+    <!-- <div class="container d-none" id='did-you-know-container' style="border: 1px solid yellow; height:auto;">
+        <div class="row">
+            <div class="col">
+                <section>
+                    <blockquote class="electric bubble" style="width: 40%; height:30%; padding: 10% 11% 12% 0%; font-size:35px;">Did you know, that <span>45%</span> of dogs sleep in their owner’s bed??</blockquote>
+                  </section>
+            </div>
+        </div>
+    </div> -->
+    
+{% endblock content %}
