@@ -14,11 +14,11 @@ def addFact(request):
     new_fact.user_id = request.user.id
     new_fact.save()
 
-    return redirect("/")
+    return redirect("/facts")
     
 
 def morefacts(request):
-    all_facts = Fact.objects.all()
+    all_facts = Fact.objects.all().order_by('-id')
     context = {
         'facts':all_facts,
     }
