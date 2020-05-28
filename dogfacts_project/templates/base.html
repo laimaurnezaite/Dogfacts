@@ -5,7 +5,109 @@
         <title>Dog Facts</title>
         <link href="{% static 'bootstrap-4.4.1-dist/css/bootstrap.css' %}" rel="stylesheet">
         <link href="{% static 'css/base.css' %}" rel="stylesheet">
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                document.querySelector('body').onclick = function() {
+                    document.getElementById('logo-image').style.cssText='position: relative; top: 0%; left:0%;';
+                    
+                };
+                
+               
+            });
+
+            function appearInfo() {
+                document.getElementById('welcome-col').classList.remove('d-none');
+                document.getElementById('did-you-know1-container').classList.remove('d-none');
+                document.getElementById('did-you-know2-container').classList.remove('d-none');
+
+    
+            }
+            
+        </script>
         <body>
+            <style type="text/css">
+                body {
+                    
+                    background-image: url({% static 'facts/669.jpg' %});
+                    background-size: cover;
+                }
+                .logo-container {
+                    padding: 0px;
+                    margin: 0px;
+                    max-width: 100%;
+                }
+                .logo-row {
+                    padding: 0px;
+                    margin: 0px;
+                }
+                .logo-col, #welcome-col {
+                    padding: 0px;
+                    margin: 0px;
+                }
+                #logo-image {
+                    width: 50%;
+                    top: 20%;
+                    left:25%;
+                    position: fixed;
+                    transition: all 1.0s ease-in-out;
+                }
+                #log-out-button {
+                    color: black;
+                    text-align: center;
+                    background-color:white;
+                }
+                a, a:hover {
+                    color: black;
+                    text-decoration: none;
+                }
+                
+
+            </style>
+            <div class="container logo-container" style="height:260px">
+                <div class="row logo-row" style="height:260px">
+                    <div class="col logo-col" style="height:260px">
+                        <img id="logo-image" src="{% static 'facts/logo.png' %}" onclick="appearInfo()">
+                    </div>
+                    <div class="col d-none" id="welcome-col">
+                        {% if user.is_authenticated %}
+                        <div class="row" style="margin-top:2%; margin:0px; padding:5px;">
+                            <div class="col" style="margin:5px; border: 3px solid black; background-color:white;">
+                                <p id="welcome" style="text-align:center; margin:0px;">Hi {{ user.username }}, dog lover!</p>
+                            </div>
+                            <div class="col-3" style="margin: 5px; border: 3px solid black; background-color:white;">
+                                <p id="log-out-button" style="margin:0px;"><a href="{% url 'logout' %}">Log out</a></p>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top: 2%; margin:0px; padding:5px;">
+                            <div class="col-4" style="margin: 5px; border: 3px solid black; background-color:white;">
+                                <p id="welcome" style="margin:0px; text-align:center; font-size: 21px;">Submit new fact:</p>
+                            </div>
+                            <div class="col" style="margin: 5px;">
+                               
+                                
+                                <form action="{% url 'addFact' %}" style="margin:0px; padding:0px; font-size: 21px;" method="POST">
+                                    {% csrf_token %}
+                                        <input type="text" name="new_fact" id="new_fact" autocomplete="off" style="width:75%; border:3px solid black; margin:0px; margin-right:5px; padding:0px; font-size: 21px;" required>
+                                        <button type="submit" style="width:20%; border:3px solid black; margin:0px; padding:0px; background-color:white; text-align:center; font-size: 21px;">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                        {% else %}
+                        <div class="row" style="margin-top:2%; margin:0px; padding:5px;">
+                            <div class="col" style="margin:5px; border: 3px solid black; background-color:white;">
+                                <p id="welcome" style="text-align:center; margin:0px;">Hi dog lover!</p>
+                            </div>
+                            <div class="col-3" style="margin: 5px; border: 3px solid black; background-color:white;">
+                                <p id="log-out-button" style="margin:0px;"><a href="{% url 'signup' %}">Sign up</a></p>
+                            </div>
+                            <div class="col-3" style="margin: 5px; border: 3px solid black; background-color:white;">
+                                <p id="log-out-button" style="margin:0px;"><a href="{% url 'login' %}">Log In</a></p>
+                            </div>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>    
+            </div>     
             <main>
                 {% block content %}
                 {% endblock content %} 
