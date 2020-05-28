@@ -6,37 +6,34 @@
         <link href="{% static 'bootstrap-4.4.1-dist/css/bootstrap.css' %}" rel="stylesheet">
         <link href="{% static 'css/base.css' %}" rel="stylesheet">
         <script>
-            document.addEventListener("DOMContentLoaded", function() {
-                document.querySelector('#logo-image').onclick = function() {
-                    document.getElementById('logo-image').style.cssText='position:relative; width:400px; top: 0%; left:0%;';
-                    document.getElementById('logo-row').style.cssText='height:260px';
-                    document.getElementById('logo-container').style.cssText='height:260px';
-                    setTimeout(() => {
-                        appearInfo()
-                    }, 2000);
+            function onClickLogoImage(evt) {
+                document.getElementById('logo-image').style.cssText='position:relative; width:400px; top: 0%; left:0%;';
+                document.getElementById('logo-row').style.cssText='height:260px';
+                document.getElementById('logo-container').style.cssText='height:260px';
+                setTimeout(function() {
+                    appearInfo()
+                }, 2000);
+            }
 
-                };
-            });
 
-            function appearInfo() {
-                
+            function appearInfo() {                
                 document.getElementById('welcome-col').classList.remove('d-none');
                 document.getElementById('did-you-know1').classList.remove('d-none');   
-                setTimeout(fact2, 3000);
-                setTimeout(fact3, 6000);
-                setTimeout(visibility, 12000);
+                setTimeout(showExampleFact2, 3000);
+                setTimeout(showExampleFact3, 6000);
+                setTimeout(showDoYouWantToKnowMore, 9000);
 
             }
             
-            function fact2() {
+            function showExampleFact2() {
                 document.getElementById('did-you-know2').classList.remove('d-none');
             }
-            function fact3() {
+            function showExampleFact3() {
                 document.getElementById('did-you-know3').classList.remove('d-none');
             }
-            
-            function visibility() {
-                document.getElementById('more-container').style.cssText='visibility:visible';
+
+            function showDoYouWantToKnowMore() {
+                document.getElementById('more-container').classList.remove('invisible');
                 
             }
             
@@ -44,7 +41,6 @@
         <body >
             <style type="text/css">
                 body {
-                    
                     background-image: url({% static 'facts/669.jpg' %});
                     background-size: cover;
                 }
@@ -62,19 +58,25 @@
                     margin: 0px;
                 }
                 #logo-image {
-                    
                     cursor: pointer;
                     width: 50%;
                     top: 45%;
                     left:25%;
                     position:absolute;
                     transition: all 1.0s ease-in-out;
+                    z-index: 1000;
                 }
+
+                #logo-image:hover {
+                    transform: scale(1.1);
+                }
+
                 #log-out-button {
                     color: black;
                     text-align: center;
                     background-color:white;
                 }
+
                 a, a:hover {
                     color: black;
                     text-decoration: none;
@@ -85,7 +87,7 @@
             <div class="container logo-container" id="logo-container" style="height:260px">
                 <div class="row logo-row" id="logo-row" style="height:260px">
                     <div class="col logo-col" id="logo-col" style="height:260px">
-                        <img id="logo-image" src="{% static 'facts/logo.png' %}">
+                        <img id="logo-image" src="{% static 'facts/logo.png' %}" onclick="onClickLogoImage()">
                     </div>
                     <div class="col d-none" id="welcome-col">
                         {% if user.is_authenticated %}
