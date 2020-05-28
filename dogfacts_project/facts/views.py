@@ -6,11 +6,11 @@ from .models import Fact
 # Create your views here.
 
 def home(request):
-    all_facts = Fact.objects.all()
-    context = {
-        'facts':all_facts,
-    }
-    return render(request, 'home.html', context)
+    # all_facts = Fact.objects.all()
+    # context = {
+    #     'facts':all_facts,
+    # }
+    return render(request, 'home.html')
     # return HttpResponse("Start")
 
 def addFact(request):
@@ -22,4 +22,10 @@ def addFact(request):
     return redirect("/")
     
 
+def morefacts(request):
+    all_facts = Fact.objects.all()
+    context = {
+        'facts':all_facts,
+    }
+    return render(request, 'facts.html', context)
 
