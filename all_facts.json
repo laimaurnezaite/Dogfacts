@@ -1,0 +1,747 @@
+{
+    "all": [
+       {
+          "_id": "5c871e6a85c8b40e7ed683e9",
+          "type": "dog",
+          "text": "Dogs chase their tails for a variety of reasons: curiosity, exercise, anxiety, predatory instinct or, they might have fleas! If your dog is chasing his tail excessively, talk with your vet.",
+          "user": {
+             "_id": "5a9ac18c7478810ea6c06381",
+             "name": {
+                "first": "Alex",
+                "last": "Wohlbruck"
+             }
+          },
+          "upvotes": 1,
+          "userUpvoted": false
+       },
+       {
+          "_id": "5c871e96357f5a0eeaac122b",
+          "type": "dog",
+          "text": "Dalmatian puppies are pure white when they are born and develop their spots as they grow older.",
+          "user": {
+             "_id": "5a9ac18c7478810ea6c06381",
+             "name": {
+                "first": "Alex",
+                "last": "Wohlbruck"
+             }
+          },
+          "upvotes": 1,
+          "userUpvoted": false
+       },
+       {
+          "_id": "5c871ea4357f5a0eeaac122c",
+          "type": "dog",
+          "text": "Dogs and humans have the same type of slow wave sleep (SWS) and rapid eye movement (REM) and during this REM stage dogs can dream. The twitching and paw movements that occur during their sleep are signs that your pet is dreaming.",
+          "user": {
+             "_id": "5a9ac18c7478810ea6c06381",
+             "name": {
+                "first": "Alex",
+                "last": "Wohlbruck"
+             }
+          },
+          "upvotes": 1,
+          "userUpvoted": false
+       },
+       {
+          "_id": "5c871eb6357f5a0eeaac122d",
+          "type": "dog",
+          "text": "Dogs’ eyes contain a special membrane, called the tapetum lucidum, which allows them to see in the dark.",
+          "user": {
+             "_id": "5a9ac18c7478810ea6c06381",
+             "name": {
+                "first": "Alex",
+                "last": "Wohlbruck"
+             }
+          },
+          "upvotes": 1,
+          "userUpvoted": false
+       },
+       {
+          "_id": "5c871ec0357f5a0eeaac122e",
+          "type": "dog",
+          "text": "A large breed dog’s resting heart beats between 60 and 100 times per minute, and a small dog breed’s heart beats between 100-140. Comparatively, a resting human heart beats 60-100 times per minute.",
+          "user": {
+             "_id": "5a9ac18c7478810ea6c06381",
+             "name": {
+                "first": "Alex",
+                "last": "Wohlbruck"
+             }
+          },
+          "upvotes": 1,
+          "userUpvoted": false
+       },
+       {
+          "_id": "5c871ecc357f5a0eeaac122f",
+          "type": "dog",
+          "text": "According to a Petside.com/Associated Press poll, 72% of dog owners believe their dog can detect when stormy weather is on the way.",
+          "user": {
+             "_id": "5a9ac18c7478810ea6c06381",
+             "name": {
+                "first": "Alex",
+                "last": "Wohlbruck"
+             }
+          },
+          "upvotes": 1,
+          "userUpvoted": false
+       },
+       {
+          "_id": "5c871f05357f5a0eeaac1232",
+          "type": "dog",
+          "text": "Dogs have three eyelids, an upper lid, a lower lid and the third lid, called a nictitating membrane or “haw,” which helps keep the eye moist and protected.",
+          "user": {
+             "_id": "5a9ac18c7478810ea6c06381",
+             "name": {
+                "first": "Alex",
+                "last": "Wohlbruck"
+             }
+          },
+          "upvotes": 1,
+          "userUpvoted": false
+       },
+       {
+          "_id": "5c871f31357f5a0eeaac1234",
+          "type": "dog",
+          "text": "Dogs’ noses secrete a thin layer of mucous that helps them absorb scent. They then lick their noses to sample the scent through their mouth.",
+          "user": {
+             "_id": "5a9ac18c7478810ea6c06381",
+             "name": {
+                "first": "Alex",
+                "last": "Wohlbruck"
+             }
+          },
+          "upvotes": 1,
+          "userUpvoted": false
+       },
+       {
+          "_id": "5c871f6b357f5a0eeaac1236",
+          "type": "dog",
+          "text": "It’s a myth that dogs only see in black and white. In fact, it’s believed that dogs see primarily in blue, greenish-yellow, yellow and various shades of gray.",
+          "user": {
+             "_id": "5a9ac18c7478810ea6c06381",
+             "name": {
+                "first": "Alex",
+                "last": "Wohlbruck"
+             }
+          },
+          "upvotes": 1,
+          "userUpvoted": false
+       },
+       {
+          "_id": "5c871f77357f5a0eeaac1237",
+          "type": "dog",
+          "text": "Sound frequency is measured in Hertz (Hz). The higher the Hertz, the higher-pitched the sound. Dogs hear best at 8,000 Hz, while humans hear best at around 2,000 Hz.",
+          "user": {
+             "_id": "5a9ac18c7478810ea6c06381",
+             "name": {
+                "first": "Alex",
+                "last": "Wohlbruck"
+             }
+          },
+          "upvotes": 1,
+          "userUpvoted": false
+       },
+       {
+          "_id": "5c871f81357f5a0eeaac1238",
+          "type": "dog",
+          "text": "Dogs’ ears are extremely expressive. It’s no wonder! There are more than a dozen separate muscles that control a dog’s ear movements.",
+          "user": {
+             "_id": "5a9ac18c7478810ea6c06381",
+             "name": {
+                "first": "Alex",
+                "last": "Wohlbruck"
+             }
+          },
+          "upvotes": 1,
+          "userUpvoted": false
+       },
+       {
+          "_id": "5c871f8b357f5a0eeaac1239",
+          "type": "dog",
+          "text": "While the Chow Chow dogs are well known for their distinctive blue-black tongues, they’re actually born with pink tongues. They turn blue-black at 8-10 weeks of age.",
+          "user": {
+             "_id": "5a9ac18c7478810ea6c06381",
+             "name": {
+                "first": "Alex",
+                "last": "Wohlbruck"
+             }
+          },
+          "upvotes": 1,
+          "userUpvoted": false
+       },
+       {
+          "_id": "5c871f97357f5a0eeaac123a",
+          "type": "dog",
+          "text": "When dogs kick after going to the bathroom, they are using the scent glands on their paws to further mark their territory.",
+          "user": {
+             "_id": "5a9ac18c7478810ea6c06381",
+             "name": {
+                "first": "Alex",
+                "last": "Wohlbruck"
+             }
+          },
+          "upvotes": 1,
+          "userUpvoted": false
+       },
+       {
+          "_id": "5c871f9d357f5a0eeaac123b",
+          "type": "dog",
+          "text": "Dogs curl up in a ball when they sleep due to an age-old instinct to keep themselves warm and protect their abdomen and vital organs from predators.",
+          "user": {
+             "_id": "5a9ac18c7478810ea6c06381",
+             "name": {
+                "first": "Alex",
+                "last": "Wohlbruck"
+             }
+          },
+          "upvotes": 1,
+          "userUpvoted": false
+       },
+       {
+          "_id": "5c871fa3357f5a0eeaac123c",
+          "type": "dog",
+          "text": "In addition to sweating through their paw pads, dogs pant to cool themselves off. A panting dog can take 300-400 breaths (compared to his regular 30-40) with very little effort.",
+          "user": {
+             "_id": "5a9ac18c7478810ea6c06381",
+             "name": {
+                "first": "Alex",
+                "last": "Wohlbruck"
+             }
+          },
+          "upvotes": 1,
+          "userUpvoted": false
+       },
+       {
+          "_id": "5c871f3f357f5a0eeaac1235",
+          "type": "dog",
+          "text": "Dogs have about 1,700 taste buds. Humans have approximately 9,000 and cats have around 473.",
+          "user": {
+             "_id": "5a9ac18c7478810ea6c06381",
+             "name": {
+                "first": "Alex",
+                "last": "Wohlbruck"
+             }
+          },
+          "upvotes": 1,
+          "userUpvoted": false
+       },
+       {
+          "_id": "5c871f27357f5a0eeaac1233",
+          "type": "dog",
+          "text": "45% of dogs sleep in their owner’s bed.",
+          "user": {
+             "_id": "5a9ac18c7478810ea6c06381",
+             "name": {
+                "first": "Alex",
+                "last": "Wohlbruck"
+             }
+          },
+          "upvotes": 1,
+          "userUpvoted": false
+       },
+       {
+          "_id": "5c871ed8357f5a0eeaac1230",
+          "type": "dog",
+          "text": "A dog’s normal temperature is between 101 and 102.5 degrees Fahrenheit.",
+          "user": {
+             "_id": "5a9ac18c7478810ea6c06381",
+             "name": {
+                "first": "Alex",
+                "last": "Wohlbruck"
+             }
+          },
+          "upvotes": 1,
+          "userUpvoted": false
+       },
+       {
+          "_id": "5b12d7d0cf4b960d5eb02ec8",
+          "text": "The domestic dog has been one of the most popular working and companion animals throughout human history.",
+          "type": "dog",
+          "user": {
+             "_id": "5a9ac18c7478810ea6c06381",
+             "name": {
+                "first": "Alex",
+                "last": "Wohlbruck"
+             }
+          },
+          "upvotes": 0,
+          "userUpvoted": false
+       },
+       {
+          "_id": "5b12d7d5cf4b960d5eb02ec9",
+          "text": "Dogs perform many useful tasks for humans including hunting, farm work and security as well as assisting those with disabilities such as the blind.",
+          "type": "dog",
+          "user": {
+             "_id": "5a9ac18c7478810ea6c06381",
+             "name": {
+                "first": "Alex",
+                "last": "Wohlbruck"
+             }
+          },
+          "upvotes": 0,
+          "userUpvoted": false
+       },
+       {
+          "_id": "5b12d7d9cf4b960d5eb02eca",
+          "text": "Although experts often disagree, there is scientific evidence which shows that the domestication of dogs could have occurred more than 15,000 years ago.",
+          "type": "dog",
+          "user": {
+             "_id": "5a9ac18c7478810ea6c06381",
+             "name": {
+                "first": "Alex",
+                "last": "Wohlbruck"
+             }
+          },
+          "upvotes": 0,
+          "userUpvoted": false
+       },
+       {
+          "_id": "5b12d7e1cf4b960d5eb02ecc",
+          "text": "Examples of these breeds include: Bulldog, German Shepherd, Collie, Golden Retriever, St Bernard, Greyhound, Bloodhound, Chihuahua, Labrador, Great Dane, Rottweiler, Boxer and Cocker Spaniel.",
+          "type": "dog",
+          "user": {
+             "_id": "5a9ac18c7478810ea6c06381",
+             "name": {
+                "first": "Alex",
+                "last": "Wohlbruck"
+             }
+          },
+          "upvotes": 0,
+          "userUpvoted": false
+       },
+       {
+          "_id": "5b12d7e6cf4b960d5eb02ecd",
+          "text": "The most popular breed of dog in the world by registered ownership is the Labrador. With their gentle nature, obedience, intelligence and near limitless energy, Labradors make for excellent family pets and reliable workers. They often assist police and are a common choice as guide dogs.",
+          "type": "dog",
+          "user": {
+             "_id": "5a9ac18c7478810ea6c06381",
+             "name": {
+                "first": "Alex",
+                "last": "Wohlbruck"
+             }
+          },
+          "upvotes": 0,
+          "userUpvoted": false
+       },
+       {
+          "_id": "5b12d7e9cf4b960d5eb02ece",
+          "text": "Dogs have formed such a strong bond as pets, workers and companions to humans that they have earned the nickname \"man's best friend\".",
+          "type": "dog",
+          "user": {
+             "_id": "5a9ac18c7478810ea6c06381",
+             "name": {
+                "first": "Alex",
+                "last": "Wohlbruck"
+             }
+          },
+          "upvotes": 0,
+          "userUpvoted": false
+       },
+       {
+          "_id": "5b12d7edcf4b960d5eb02ecf",
+          "text": "Humans help train various dog breeds to enter in competitions such as breed shows, agility and obedience contests, racing and sled pulling.",
+          "type": "dog",
+          "user": {
+             "_id": "5a9ac18c7478810ea6c06381",
+             "name": {
+                "first": "Alex",
+                "last": "Wohlbruck"
+             }
+          },
+          "upvotes": 0,
+          "userUpvoted": false
+       },
+       {
+          "_id": "5b7a02442048fd0014e9d870",
+          "text": "There are more than 150 dog breeds, divided into 8 classes: sporting, hound, working, terrier, toy, non-sporting, herding, and miscellaneous.",
+          "type": "dog",
+          "user": {
+             "_id": "5a9ac18c7478810ea6c06381",
+             "name": {
+                "first": "Alex",
+                "last": "Wohlbruck"
+             }
+          },
+          "upvotes": 0,
+          "userUpvoted": false
+       },
+       {
+          "_id": "5b7a02502048fd0014e9d871",
+          "text": "According to a recent survey, the most popular name for a dog is Max. Other popular names include Molly, Sam, Zach, and Maggie.",
+          "type": "dog",
+          "user": {
+             "_id": "5a9ac18c7478810ea6c06381",
+             "name": {
+                "first": "Alex",
+                "last": "Wohlbruck"
+             }
+          },
+          "upvotes": 0,
+          "userUpvoted": false
+       },
+       {
+          "_id": "5b7a025b2048fd0014e9d873",
+          "text": "Puppies and kittens can be adopted as early as 8 weeks of age.  Until then, they should stay with their moms and littermates.",
+          "type": "dog",
+          "user": {
+             "_id": "5a9ac18c7478810ea6c06381",
+             "name": {
+                "first": "Alex",
+                "last": "Wohlbruck"
+             }
+          },
+          "upvotes": 0,
+          "userUpvoted": false
+       },
+       {
+          "_id": "5b7a02682048fd0014e9d875",
+          "text": "Contrary to popular belief, dogs do not sweat by salivating. They sweat through the pads of their feet.",
+          "type": "dog",
+          "user": {
+             "_id": "5a9ac18c7478810ea6c06381",
+             "name": {
+                "first": "Alex",
+                "last": "Wohlbruck"
+             }
+          },
+          "upvotes": 0,
+          "userUpvoted": false
+       },
+       {
+          "_id": "5b7a027a2048fd0014e9d876",
+          "text": "Dogs may not have as many taste buds as we do (they have about 1,700 on their tongues, while we humans have about 9,000).",
+          "type": "dog",
+          "user": {
+             "_id": "5a9ac18c7478810ea6c06381",
+             "name": {
+                "first": "Alex",
+                "last": "Wohlbruck"
+             }
+          },
+          "upvotes": 0,
+          "userUpvoted": false
+       },
+       {
+          "_id": "5b7a02932048fd0014e9d877",
+          "text": "Dogs have over 200 million scent receptors in their noses (we have only 5 million) so it’s important that their food smells good and tastes good.",
+          "type": "dog",
+          "user": {
+             "_id": "5a9ac18c7478810ea6c06381",
+             "name": {
+                "first": "Alex",
+                "last": "Wohlbruck"
+             }
+          },
+          "upvotes": 0,
+          "userUpvoted": false
+       },
+       {
+          "_id": "5b7a02d92048fd0014e9d879",
+          "text": "Toto’s role in The Wizard of Oz was played by a female Cairn Terrier named Terry, and the Taco Bell dog is a female Chihuahua named Gidget.",
+          "type": "dog",
+          "user": {
+             "_id": "5a9ac18c7478810ea6c06381",
+             "name": {
+                "first": "Alex",
+                "last": "Wohlbruck"
+             }
+          },
+          "upvotes": 0,
+          "userUpvoted": false
+       },
+       {
+          "_id": "5b7a02f12048fd0014e9d87c",
+          "text": "If a dog isn’t spayed or neutered, a female dog, her mate and their offspring can product 67,000 dogs in 6 years.",
+          "type": "dog",
+          "user": {
+             "_id": "5a9ac18c7478810ea6c06381",
+             "name": {
+                "first": "Alex",
+                "last": "Wohlbruck"
+             }
+          },
+          "upvotes": 0,
+          "userUpvoted": false
+       },
+       {
+          "_id": "5b7a02f82048fd0014e9d87d",
+          "text": "The most successful mountain rescue dog ever was a St Bernard named Barry, who lived during the early 1800’s and saved 40 lives.",
+          "type": "dog",
+          "user": {
+             "_id": "5a9ac18c7478810ea6c06381",
+             "name": {
+                "first": "Alex",
+                "last": "Wohlbruck"
+             }
+          },
+          "upvotes": 0,
+          "userUpvoted": false
+       },
+       {
+          "_id": "5b7a03082048fd0014e9d87f",
+          "text": "Nearly all but two breeds of dogs have pink tongues: the Chow Chow and the Shar-pei both have black tongues.",
+          "type": "dog",
+          "user": {
+             "_id": "5a9ac18c7478810ea6c06381",
+             "name": {
+                "first": "Alex",
+                "last": "Wohlbruck"
+             }
+          },
+          "upvotes": 0,
+          "userUpvoted": false
+       },
+       {
+          "_id": "5b7a030f2048fd0014e9d880",
+          "text": "The Poodle haircut was originally meant to improve the dog’s swimming abilities as a retriever, with the pom-poms left in place to warm their joints.",
+          "type": "dog",
+          "user": {
+             "_id": "5a9ac18c7478810ea6c06381",
+             "name": {
+                "first": "Alex",
+                "last": "Wohlbruck"
+             }
+          },
+          "upvotes": 0,
+          "userUpvoted": false
+       },
+       {
+          "_id": "5b7a03142048fd0014e9d881",
+          "text": "The top five favorite breeds of dogs in the US are: Labrador Retriever, Golden Retriever, German Shepherd, Beagle, and Dachshund.",
+          "type": "dog",
+          "user": {
+             "_id": "5a9ac18c7478810ea6c06381",
+             "name": {
+                "first": "Alex",
+                "last": "Wohlbruck"
+             }
+          },
+          "upvotes": 0,
+          "userUpvoted": false
+       },
+       {
+          "_id": "5b7a032e2048fd0014e9d885",
+          "text": "All dogs, regardless of breed, are direct descendants of wolves and technically of the same species.",
+          "type": "dog",
+          "user": {
+             "_id": "5a9ac18c7478810ea6c06381",
+             "name": {
+                "first": "Alex",
+                "last": "Wohlbruck"
+             }
+          },
+          "upvotes": 0,
+          "userUpvoted": false
+       },
+       {
+          "_id": "5b7a03382048fd0014e9d886",
+          "text": "A dog’s whiskers — found on the muzzle, above the eyes and below the jaws — are technically known as vibrissae. They are touch-sensitive hairs than actually sense minute changes in airflow.",
+          "type": "dog",
+          "user": {
+             "_id": "5a9ac18c7478810ea6c06381",
+             "name": {
+                "first": "Alex",
+                "last": "Wohlbruck"
+             }
+          },
+          "upvotes": 0,
+          "userUpvoted": false
+       },
+       {
+          "_id": "5b7a03432048fd0014e9d887",
+          "text": "Dogs are capable of locating the source of a sound in 6/100ths of a second by using their swiveling ears like radar dishes.",
+          "type": "dog",
+          "user": {
+             "_id": "5a9ac18c7478810ea6c06381",
+             "name": {
+                "first": "Alex",
+                "last": "Wohlbruck"
+             }
+          },
+          "upvotes": 0,
+          "userUpvoted": false
+       },
+       {
+          "_id": "5c7c73a0aadb7509b9f00154",
+          "text": "Dogs have a good sense of time, and pick up on your routines and habits. Your dog does miss you when you're gone!",
+          "type": "dog",
+          "user": {
+             "_id": "5a9ac18c7478810ea6c06381",
+             "name": {
+                "first": "Alex",
+                "last": "Wohlbruck"
+             }
+          },
+          "upvotes": 0,
+          "userUpvoted": false
+       },
+       {
+          "_id": "5c847f4729411d142470c91a",
+          "type": "dog",
+          "text": "The Newfoundland breed has a water resistant coat and webbed feet. This dog was originally bred to help haul nets for fishermen and rescuing people at risk of drowning.",
+          "user": {
+             "_id": "5a9ac18c7478810ea6c06381",
+             "name": {
+                "first": "Alex",
+                "last": "Wohlbruck"
+             }
+          },
+          "upvotes": 0,
+          "userUpvoted": false
+       },
+       {
+          "_id": "5b7a02562048fd0014e9d872",
+          "text": "Dogs can vary in size from a 36 inch (150+ lb.) Great Dane to a 2 lb. Chihuahua.",
+          "type": "dog",
+          "user": {
+             "_id": "5a9ac18c7478810ea6c06381",
+             "name": {
+                "first": "Alex",
+                "last": "Wohlbruck"
+             }
+          },
+          "upvotes": 0,
+          "userUpvoted": false
+       },
+       {
+          "_id": "5b7a03012048fd0014e9d87e",
+          "text": "It was recently discovered that dogs do see in color, just not as vivid as we see.",
+          "type": "dog",
+          "user": {
+             "_id": "5a9ac18c7478810ea6c06381",
+             "name": {
+                "first": "Alex",
+                "last": "Wohlbruck"
+             }
+          },
+          "upvotes": 0,
+          "userUpvoted": false
+       },
+       {
+          "_id": "5b12d7f2cf4b960d5eb02ed0",
+          "text": "Dog have superior hearing than humans, capable of hearing sounds at four times the distance.",
+          "type": "dog",
+          "user": {
+             "_id": "5a9ac18c7478810ea6c06381",
+             "name": {
+                "first": "Alex",
+                "last": "Wohlbruck"
+             }
+          },
+          "upvotes": 0,
+          "userUpvoted": false
+       },
+       {
+          "_id": "5b7a02622048fd0014e9d874",
+          "text": "About 1/3 of the dogs that are surrendered to animal shelters are purebred dogs.",
+          "type": "dog",
+          "user": {
+             "_id": "5a9ac18c7478810ea6c06381",
+             "name": {
+                "first": "Alex",
+                "last": "Wohlbruck"
+             }
+          },
+          "upvotes": 0,
+          "userUpvoted": false
+       },
+       {
+          "_id": "5b7a02e32048fd0014e9d87a",
+          "text": "Former US President Teddy Roosevelt had a Pit Bull named Pete.",
+          "type": "dog",
+          "user": {
+             "_id": "5a9ac18c7478810ea6c06381",
+             "name": {
+                "first": "Alex",
+                "last": "Wohlbruck"
+             }
+          },
+          "upvotes": 0,
+          "userUpvoted": false
+       },
+       {
+          "_id": "5b7a031a2048fd0014e9d882",
+          "text": "The Basenji is the only barkless dog in the world.",
+          "type": "dog",
+          "user": {
+             "_id": "5a9ac18c7478810ea6c06381",
+             "name": {
+                "first": "Alex",
+                "last": "Wohlbruck"
+             }
+          },
+          "upvotes": 0,
+          "userUpvoted": false
+       },
+       {
+          "_id": "5b7a03202048fd0014e9d883",
+          "text": "Greyhounds can reach a speed of up to 45 miles per hour.",
+          "type": "dog",
+          "user": {
+             "_id": "5a9ac18c7478810ea6c06381",
+             "name": {
+                "first": "Alex",
+                "last": "Wohlbruck"
+             }
+          },
+          "upvotes": 0,
+          "userUpvoted": false
+       },
+       {
+          "_id": "5b7a03272048fd0014e9d884",
+          "text": "When a puppy is born, he is blind, deaf, and toothless.",
+          "type": "dog",
+          "user": {
+             "_id": "5a9ac18c7478810ea6c06381",
+             "name": {
+                "first": "Alex",
+                "last": "Wohlbruck"
+             }
+          },
+          "upvotes": 0,
+          "userUpvoted": false
+       },
+       {
+          "_id": "5b12d7cccf4b960d5eb02ec7",
+          "text": "In total there is said to be around 400 million dogs in the world.",
+          "type": "dog",
+          "user": {
+             "_id": "5a9ac18c7478810ea6c06381",
+             "name": {
+                "first": "Alex",
+                "last": "Wohlbruck"
+             }
+          },
+          "upvotes": 0,
+          "userUpvoted": false
+       },
+       {
+          "_id": "5b12d7ddcf4b960d5eb02ecb",
+          "text": "There are hundreds of different breeds of dogs.",
+          "type": "dog",
+          "user": {
+             "_id": "5a9ac18c7478810ea6c06381",
+             "name": {
+                "first": "Alex",
+                "last": "Wohlbruck"
+             }
+          },
+          "upvotes": 0,
+          "userUpvoted": false
+       },
+       {
+          "_id": "5b12d800cf4b960d5eb02ed2",
+          "text": "The average life span for a dog is around 10 to 14 years.",
+          "type": "dog",
+          "user": {
+             "_id": "5a9ac18c7478810ea6c06381",
+             "name": {
+                "first": "Alex",
+                "last": "Wohlbruck"
+             }
+          },
+          "upvotes": 0,
+          "userUpvoted": false
+       }
+    ],
+    "me": []
+ }
