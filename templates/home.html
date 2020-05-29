@@ -3,47 +3,72 @@
 
 {% block content %}
 <style>
-    #did-you-know2, #did-you-know1, #did-you-know3, #did-you-know4 {
-        width: 500px; 
-        height:330px; 
+    .electric {
+        background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/electric.svg);
+        width: 500px;
+        font-size:26px;
+        font-style: italic;
         padding-bottom:0; 
         padding-top:60px; 
-        padding-right:115px; 
-        padding-left:20px; 
+        padding-right:147px; 
+        padding-left:37px; 
         text-align:center; 
-        font-size:26px
+        height:330px; 
     }
-    #more-container:hover {
+    .more-container:hover {
         transform: scale(1.05);
     }
+    .more-col {
+        margin-right:50px;
+    }
+    .more-button {
+        width:100%; 
+        text-align:center; 
+    }
+    .facts-container, .more-container {
+        max-width:100%;
+    }
+    .facts-row {
+        height:310px; 
+        margin:0px;
+    }
+    span {
+        font-weight: bolder;
+        font-size: 35px;
+    }
+    section {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
 </style>
-<div class="container invisible" id="more-container" style="max-width: 100%; padding:0px; margin:0px;">
-    <div class="row justify-content-end" style="padding:0px; margin:0px;">
-        <div class="col-5"  style="margin-right:50px;">
-            <form action="{% url 'morefacts' %}" style="margin:0px; padding:0px; font-size: 21px;" method="POST">
+<div class="container invisible more-container no-padding-margin" id="more-container">
+    <div class="row justify-content-end no-padding-margin">
+        <div class="col-5 more-col">
+            <form action="{% url 'morefacts' %}" class="no-padding-margin small-font" method="POST">
                 {% csrf_token %}
-                    <button type="submit" style="width:100%; border:3px solid black; margin:0px; padding:0px; background-color:white; text-align:center; font-size: 21px;">Do you want to know more?</button>
+                    <button type="submit" class="small-font no-padding-margin white-background more-button">Do you want to know more?</button>
             </form>
         </div>
     </div>
 
 </div>
 
-<div class="container" style="padding: 0px; margin:0px; max-width:100%;">
-    <div class="row justify-content-center" style="height:310px; margin:0px;">
-        <div class="col" style="height:310px;">
-            <section style="padding:0px; margin:0px; height:310px;">
+<div class="container no-padding-margin facts-container">
+    <div class="row justify-content-center facts-row">
+        <div class="col">
+            <section>
                 <blockquote class="electric d-none" id='did-you-know1'> 
                     <div class="col">
-                        <p>Did you know, that <span>45%</span>of dogs sleep in their owner’s bed?</p>
+                        <p>Did you know, that <span>45%</span> of dogs sleep in their owner’s bed?</p>
                     </div>
                 </blockquote>
             </section>
         </div>
     </div>
-    <div class="row justify-content-between" style="height:310px; margin:0px;">
-        <div class="col-4" style="height:310px;">
-            <section style="padding:0px; margin:0px; height:310px;">
+    <div class="row justify-content-between facts-row">
+        <div class="col-4">
+            <section>
                 <blockquote class="electric d-none" id='did-you-know2'> 
                     <div class="col">
                         <p>Did you know, that The Basenji is the <span>only</span> barkless dog in the world?</p>
@@ -51,9 +76,9 @@
                 </blockquote>
             </section>
         </div>
-        <div class="col-4" style="height:310px;">
-            <section style="padding:0px; margin:0px; height:310px;">
-                <blockquote class="electric mybubble d-none" id='did-you-know3'> 
+        <div class="col-4">
+            <section>
+                <blockquote class="electric d-none" id='did-you-know3'> 
                     <div class="col">
                         <p>Did you know, that there are <span>hundreds</span> of different breeds of dogs?</p>
                     </div>

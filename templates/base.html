@@ -15,7 +15,6 @@
                 }, 1000);
             }
 
-
             function appearInfo() {                
                 document.getElementById('welcome-col').classList.remove('d-none');
                 document.getElementById('did-you-know1').classList.remove('d-none');   
@@ -40,25 +39,22 @@
         </script>
         <body >
             <style type="text/css">
+                @font-face {
+                    font-family: 'SequentialistBB';
+                    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/306FA6_1_0.woff2') format('woff2'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/306FA6_0_0.woff') format('woff');
+                    font-style: normal;
+                    font-weight: 400;
+                }
                 body {
                     background-image: url({% static 'facts/669.jpg' %});
                     background-size: cover;
+                    font-family: SequentialistBB, cursive;
+                    font-size: 2.5vw;
                 }
                 .logo-container {
-                    padding: 0px;
-                    margin: 0px;
-                    max-width: 100%;
                     margin-bottom: 20px;
-                    height:260px;
                 }
-                .logo-row {
-                    padding: 0px;
-                    margin: 0px;
-                    height:260px;
-                }
-                .logo-col, #welcome-col {
-                    padding: 0px;
-                    margin: 0px;
+                .logo-col, .welcome-col, .logo-row, .logo-container {
                     height:260px;
                 }
                 #logo-image {
@@ -75,58 +71,89 @@
                     transform: scale(1.1);
                 }
 
-                #log-out-button {
-                    color: black;
-                    text-align: center;
-                    background-color:white;
-                }
-
                 a, a:hover {
                     color: black;
                     text-decoration: none;
                 }
-                
+                .welcome-row { 
+                    margin:0px; 
+                    padding:5px;
+                }
+                .element-inside {
+                    text-align:center; 
+                    margin:0px;
+                }
+                input {
+                    width:75%;  
+                    margin-right:5px; 
+                }
+                button {
+                    width:20%; 
+                    text-align:center; 
+                }
+                .white-background {
+                    border:3px solid black; 
+                    background-color:white;
+                }
+                .no-padding-margin {
+                    padding:0px; 
+                    margin:0px;
+                }
+                .small-font{
+                    font-size: 21px;
+                }
+                .max-width {
+                    max-width: 100%;
+                }
+                .margin-five {
+                    margin: 5px;
+                }
+                ul {
+                    text-align: center; 
+                    list-style-type:none 
+                }
+                label {
+                    width: 200px;
+                }
 
             </style>
-            <div class="container logo-container" id="logo-container">
-                <div class="row logo-row" id="logo-row">
-                    <div class="col logo-col" id="logo-col">
+            <div class="container logo-container max-width" id="logo-container">
+                <div class="row logo-row no-padding-margin" id="logo-row">
+                    <div class="col logo-col no-padding-margin" id="logo-col">
                         <img id="logo-image" src="{% static 'facts/logo-new.png' %}" onclick="onClickLogoImage()">
                     </div>
-                    <div class="col d-none" id="welcome-col">
+                    <div class="col d-none welcome-col no-padding-margin" id="welcome-col">
                         {% if user.is_authenticated %}
-                        <div class="row" style="margin-top:2%; margin:0px; padding:5px;">
-                            <div class="col" style="margin:5px; border: 3px solid black; background-color:white;">
-                                <p id="welcome" style="text-align:center; margin:0px;">Hi {{ user.username }}, dog lover!</p>
+                        <div class="row welcome-row">
+                            <div class="col margin-five white-background">
+                                <p class="element-inside">Hi {{ user.username }}, dog lover!</p>
                             </div>
-                            <div class="col-3" style="margin: 5px; border: 3px solid black; background-color:white;">
-                                <p id="log-out-button" style="margin:0px;"><a href="{% url 'logout' %}">Log out</a></p>
+                            <div class="col-3 margin-five">
+                                <p class="element-inside white-background"><a href="{% url 'logout' %}">Log out</a></p>
                             </div>
                         </div>
-                        <div class="row" style="margin-top: 2%; margin:0px; padding:5px;">
-                            <div class="col-4" style="margin: 5px; border: 3px solid black; background-color:white;">
-                                <p id="welcome" style="margin:0px; text-align:center; font-size: 20px;">Submit new fact:</p>
+                        <div class="row welcome-row">
+                            <div class="col-4 margin-five">
+                                <p class="element-inside small-font white-background">Submit new fact:</p>
                             </div>
-                            <div class="col" style="margin: 5px;">
-                               
-                                
-                                <form action="{% url 'addFact' %}" style="margin:0px; padding:0px; font-size: 20px;" method="POST">
+                            <div class="col margin-five">
+                                <form action="{% url 'addFact' %}" class="no-padding-margin small-font" method="POST">
                                     {% csrf_token %}
-                                        <input type="text" name="new_fact" id="new_fact" autocomplete="off" style="width:75%; border:3px solid black; margin:0px; margin-right:5px; padding:0px; font-size: 20px;" required>
-                                        <button type="submit" style="width:20%; border:3px solid black; margin:0px; padding:0px; background-color:white; text-align:center; font-size: 20px;">Submit</button>
+                                        <input class="no-padding-margin small-font white-background" type="text" name="new_fact" id="new_fact" autocomplete="off" required>
+                                        <button class="no-padding-margin white-background small-font" type="submit">Submit</button>
                                 </form>
                             </div>
                         </div>
                         {% else %}
-                        <div class="row" style="margin-top:2%; margin:0px; padding:5px;">
-                            <div class="col" style="margin:5px; border: 3px solid black; background-color:white;">
-                                <p id="welcome" style="text-align:center; margin:0px;">Hi dog lover!</p>
+                        <div class="row welcome-row">
+                            <div class="col margin-five white-background">
+                                <p class="element-inside">Hi dog lover!</p>
                             </div>
-                            <div class="col-3" style="margin: 5px; border: 3px solid black; background-color:white;">
-                                <p id="log-out-button" style="margin:0px;"><a href="{% url 'signup' %}">Sign up</a></p>
+                            <div class="col-3 margin-five white-background">
+                                <p class="element-inside"><a href="{% url 'signup' %}">Sign up</a></p>
                             </div>
-                            <div class="col-3" style="margin: 5px; border: 3px solid black; background-color:white;">
-                                <p id="log-out-button" style="margin:0px;"><a href="{% url 'login' %}">Log In</a></p>
+                            <div class="col-3 margin-five white-background">
+                                <p class="element-inside"><a href="{% url 'login' %}">Log In</a></p>
                             </div>
                         </div>
                         {% endif %}

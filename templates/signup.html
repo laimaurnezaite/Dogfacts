@@ -8,22 +8,30 @@
         });
     </script>
     <style> 
-
-        
+        input {
+            width: auto;
+        }
+        .sign-up-row {
+            padding:2%;
+        }
+        form {
+            text-align:center; 
+            padding:2%;
+        }
     </style>
-    <div class="container" style="margin:auto; border:3px solid black; background:white">
-        <div class="row" style="padding:2%;">
+    <div class="container white-background">
+        <div class="row sign-up-row">
             <div class="col">
-                <form method="POST" style="text-align:center; padding:2%; font-size: 20px;">
+                <form method="POST" class="small-font">
                     {% csrf_token %}
                     <!-- {{ form.as_p }} -->
-                    <label for="{{ form.username.id_for_label }}" style="width: 200px;">Username:</label>
+                    <label for="{{ form.username.id_for_label }}">Username:</label>
                     {{ form.username }} <br>
-                    <label for="{{ form.password1.id_for_label }}" style="width: 200px;">Password:</label>
+                    <label for="{{ form.password1.id_for_label }}">Password:</label>
                     {{ form.password1 }}  <br>
-                    <label for="{{ form.password2.id_for_label }}" style="width: 200px;">Confirm password:</label>
+                    <label for="{{ form.password2.id_for_label }}">Confirm password:</label>
                     {{ form.password2 }}  <br>
-                    <ul style="text-align: center; list-style-type:none">
+                    <ul>
                         <li>Username must be 150 characters or fewer. Letters, digits and @/./+/-/_ only.</li>
                         <li>Your password can't be too similar to your other personal information.</li>
                         <li>Your password must contain at least 8 characters.</li>
@@ -32,7 +40,7 @@
                     </ul>
 
 
-                    <button type="submit" style=" width: 100px; border:3px solid black; font-size: 20px;">Sign Up</button> <br>
+                    <button class="white-background small-font max-width" type="submit">Sign Up</button> <br>
                 </form>
             </div>
         </div>
